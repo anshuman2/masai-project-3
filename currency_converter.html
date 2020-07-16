@@ -64,29 +64,29 @@
                   if(xhr.status == 200){
                      console.log(xhr.response)
                      if(payload.currency1==='AED')
-                         res.innerHTML=json.quotes.USDAED*payload.value+' '+'USD'
+                         res.innerHTML=payload.value/json.quotes.USDAED+' '+'USD'
                      else if(payload.currency1==='AUD')  
-                         res.innerHTML=json.quotes.USDAUD*payload.value+' '+'USD'  
+                         res.innerHTML=payload.value/json.quotes.USDAUD+' '+'USD'  
                      else if(payload.currency1==='CAD')  
-                         res.innerHTML=json.quotes.USDCAD*payload.value+' '+'USD'    
+                         res.innerHTML=payload.value/json.quotes.USDCAD+' '+'USD'    
                      else if(payload.currency1==='PLN')  
-                         res.innerHTML=json.quotes.USDPLN*payload.value+' '+'USD'
+                         res.innerHTML=payload.value/json.quotes.USDPLN+' '+'USD'
                      else if(payload.currency1==='MXN')  
-                         res.innerHTML=json.quotes.USDMXN*payload.value+' '+'USD' 
+                         res.innerHTML=payload.value/json.quotes.USDMXN+' '+'USD' 
                      else if(payload.currency1==='CNY')  
-                         res.innerHTML=json.quotes.USDCNY*payload.value+' '+'USD' 
+                         res.innerHTML=payload.value/json.quotes.USDCNY+' '+'USD' 
                      else if(payload.currency1==='EUR')  
-                         res.innerHTML=json.quotes.USDEUR*payload.value+' '+'USD'  
+                         res.innerHTML=payload.value/json.quotes.USDEUR+' '+'USD'  
                      else if(payload.currency1==='GBP')  
-                         res.innerHTML=json.quotes.USDGBP*payload.value+' '+'USD'
+                         res.innerHTML=payload.value/json.quotes.USDGBP+' '+'USD'
                      else if(payload.currency1==='JPY')  
-                         res.innerHTML=json.quotes.USDJPY*payload.value+' '+'USD' 
+                         res.innerHTML=payload.value/json.quotes.USDJPY+' '+'USD' 
                      else if(payload.currency1==='ZAR')  
-                         res.innerHTML=json.quotes.USDZAR*payload.value+' '+'USD' 
+                         res.innerHTML=payload.value/json.quotes.USDZAR+' '+'USD' 
                      else if(payload.currency1==='INR')  
-                         res.innerHTML=json.quotes.USDINR*payload.value+' '+'USD'    
+                         res.innerHTML=payload.value/json.quotes.USDINR+' '+'USD'    
                      else
-                        res.innerHTML=json.error.info
+                        res.innerHTML='Please Enter Correct Currency Format in Block Letters'
                 
                     }
                        
